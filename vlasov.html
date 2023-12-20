@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="asf.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Tanks</title>
+</head>
+<body>
+    <div id="container">
+          <h1><img src="logo.png" height="35" width="30"> World of Tanks</h1>
+
+        <p>World of Tanks - это многопользовательская онлайн-игра, посвященная танковым сражениям. В игре вы сможете управлять различными историческими танками и принимать участие в эпических боях на разнообразных аренах.</p>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('tab1')">Описание игры</div>
+            <div class="tab" onclick="showTab('tab2')">Создание и развитие</div>
+            <div class="tab" onclick="showTab('tab3')">Загрузка игры</div>
+            <div class="tab" onclick="showTab('tab4')">Танки</div>           
+            <div class="tab" onclick="showTab('tab5')">Сообщество</div>
+        </div>
+
+        <div class="tab-content active" id="tab1">
+            <p>World of Tanks - клиентская командная массовая многопользовательская онлайн-игра, посвящённая бронированным машинам середины XX века. В распоряжении игроков более 40 боевых карт, созданных на основе реальных локаций времён Второй мировой войны, и исторически достоверная техника 11 наций общей численностью более 600 единиц.</p>
+        </div>
+
+        <div class="tab-content" id="tab2">
+            <p>World of Tanks была разработана компанией Wargaming и впервые выпущена в 2010 году. Основная задача разработчиков заключалась в создании реалистичного и захватывающего танкового опыта, который позволяет игрокам погрузиться в мир танковых сражений.</p>
+            <p>С течением времени игра получила множество обновлений и улучшений, включая новые танки, карты и игровые режимы. Разработчики также активно поддерживают игру, предлагая регулярные обновления и новый контент для игроков.</p>
+        </div>
+
+        <div class="tab-content"id="tab3">
+            <p>Для того чтобы <a class="nav-link" href="https://worldoftanks.eu/ru/game/download/">скачать</a> World of Tanks, вам необходимо посетить официальный сайт игры или использовать платформу, через которую игра доступна (например, Steam). На официальном сайте вы сможете найти ссылку на загрузку игры, выбрав соответствующую платформу (Windows, macOS, Xbox, PlayStation и т.д.).</p>
+            <p>После загрузки и установки игры, вам потребуется создать аккаунт, чтобы начать играть. Затем вы сможете выбрать танк, присоединиться к битве и наслаждаться адреналином танковых сражений в World of Tanks.</p>
+        </div>
+
+        <div class="tab-content" id="tab4">
+            <p>World of Tanks предлагает широкий выбор <a class="nav-link" href="https://worldoftanks.eu/ru/tankopedia/#wot&w_m=tanks">танков</a> различных наций и классов. В игре вы найдете исторические танки, включая легкие, средние и тяжелые танки, а также ПТ-САУ (противотанковые самоходные установки) и артиллерию.</p>
+            <p>Каждый танк имеет свои уникальные характеристики, такие как броня, маневренность, скорострельность и пробитие. Игроки могут исследовать и развивать различные модели танков, открывая новые техники и модули для повышения эффективности в бою.</p>
+        </div>
+
+        <div class="tab-content" id="tab5">
+            <p>World of Tanks имеет активное и преданные сообщество игроков со всего мира. Сообщество включает в себя официальные форумы, группы в социальных сетях, стримы и многое другое. Здесь вы можете общаться с другими игроками, делиться опытом, обсуждать стратегии и участвовать в соревнованиях.</p>
+            <p>Также внутри игры есть система кланов, которая позволяет игрокам объединяться в группы для совместной игры и соревнований. В кланах можно находить новых друзей, прокачивать свои навыки и участвовать в клановых битвах.</p>
+        </div>
+    </div>
+     <div id="container">
+            <div class="pane">
+              <table>
+                <tr>
+                    <td>
+                        <img src="leo.jpg"height="250" width="500">
+                    </td>
+                    <td>
+                        <p>Немецкий лёгкий танк пятого уровня. Обладает неплохой динамикой и лобовой бронёй, расположенной под рациональным углом. Может выполнять роль пассивного разведчика, а также перехватчика вражеских лёгких танков.
+
+Предшественник лёгкого танка VK 28.01.</p>
+                        </td>
+                </tr>
+              </table>
+            </div>
+            <hr>
+            <div class="pane">
+              <table>
+                <tr>
+                    <td>
+                        <img src="t34.jpg"height="200" width="500">
+                    </td>
+                    <td>
+                        <p>Легендарный советский танк. За счёт хорошей мобильности и высокой скорострельности может применяться как типичный СТ в маневренном бою с группой себе подобных. Однако высокая точность 57 мм орудия позволяет использовать и снайперскую тактику.
+
+Предшественник средних танков Т-34-85 и А-43.</p>
+                    </td>
+                </tr>
+              </table>
+          </div>
+          <p><h1>Популярные танки</h1></P>
+    <script>
+            container.onclick = function(event) {
+              if (event.target.className != 'remove-button') return;
+              let pane = event.target.closest('.pane');
+              pane.remove();
+            };
+          </script>
+          <main>
+            <div class="slider-container">
+            <div class="slider">
+              <img src="i.webp" alt="КВ-2">
+              <img src="i (1).webp" alt="cromwell">
+              <img src="i (2).webp" alt="СУ-152">
+              <img src="i (3).webp" alt="Бабаха">
+              <img src="i (4).webp" alt="СТБ-1">
+            </div>
+            <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+            <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+          </div>
+          </main>
+          <script>
+            const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slides = Array.from(slider.querySelectorAll('img'));
+const slideCount = slides.length;
+let slideIndex = 0;
+
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
+
+
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  updateSlider();
+}
+
+function showNextSlide() {
+  slideIndex = (slideIndex + 1) % slideCount;
+  updateSlider();
+}
+
+function updateSlider() {
+  slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+updateSlider();
+          </script>
+    <script>
+        // JavaScript для переключения вкладок
+        function showTab(tabId) {
+            // Скрыть все вкладки
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+
+            // Установить выбранную вкладку как активную
+            var tab = document.getElementById(tabId);
+            tab.classList.add("active");
+
+            // Установить выбранную вкладку как активную
+            var activeTabs = document.getElementsByClassName("tab");
+            for (var i = 0; i < activeTabs.length; i++) {
+                activeTabs[i].classList.remove("active");
+            }
+
+            // Установить выбранную вкладку как активную
+            var activeTab = document.querySelector(`.tab[data-tab="${tabId}"]`);
+            activeTab.classList.add("active");
+        }
+    </script>
+</body>
+</html>
